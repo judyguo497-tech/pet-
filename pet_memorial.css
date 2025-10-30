@@ -1,0 +1,389 @@
+/* 基础样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 头部样式 */
+header {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #4a6fa5;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 1.1rem;
+}
+
+/* 主要内容区域 */
+main {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+section {
+    padding: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+/* 欢迎区域样式 */
+.welcome-section {
+    text-align: center;
+    background-color: #f0f7ff;
+}
+
+.pet-avatar-container {
+    margin-bottom: 25px;
+}
+
+.pet-avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    border: 5px solid #fff;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.pet-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.upload-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.pet-avatar:hover .upload-overlay {
+    opacity: 1;
+}
+
+.upload-overlay i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.pet-name-container {
+    margin: 20px 0;
+}
+
+.pet-name-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #4a6fa5;
+}
+
+.pet-name-container input {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    width: 250px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.pet-greeting {
+    margin-top: 25px;
+}
+
+.pet-greeting h2 {
+    color: #4a6fa5;
+    font-size: 1.8rem;
+}
+
+/* 交互区域样式 */
+.interaction-section {
+    background-color: #fff;
+}
+
+.chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.chat-messages {
+    height: 300px;
+    overflow-y: auto;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+.message {
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.pet-message {
+    justify-content: flex-start;
+}
+
+.user-message {
+    justify-content: flex-end;
+}
+
+.message-bubble {
+    max-width: 70%;
+    padding: 10px 15px;
+    border-radius: 18px;
+    font-size: 0.95rem;
+}
+
+.pet-message .message-bubble {
+    background-color: #e3f2fd;
+    border-bottom-left-radius: 5px;
+}
+
+.user-message .message-bubble {
+    background-color: #e1f5fe;
+    border-bottom-right-radius: 5px;
+    text-align: right;
+}
+
+.chat-input {
+    display: flex;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+/* 高级功能区域 */
+.premium-features {
+    background-color: #f8f9fa;
+}
+
+.feature-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #4a6fa5;
+    margin-right: 20px;
+    width: 60px;
+    text-align: center;
+}
+
+.feature-content {
+    flex: 1;
+}
+
+.feature-content h3 {
+    color: #4a6fa5;
+    margin-bottom: 10px;
+}
+
+.merge-photos {
+    margin-top: 15px;
+}
+
+.photo-upload-container {
+    margin-bottom: 15px;
+}
+
+.photo-upload-container label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.result-photo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result-photo img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+/* 按钮样式 */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #4a6fa5;
+    color: white;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #3a5a80;
+}
+
+.premium-btn {
+    background-color: #ff9800;
+}
+
+.premium-btn:hover {
+    background-color: #f57c00;
+}
+
+/* 页脚样式 */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.disclaimer {
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+/* 模态框样式 */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #777;
+}
+
+.payment-options {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.payment-option {
+    padding: 12px 20px;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.payment-option:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+}
+
+.payment-option i {
+    margin-right: 8px;
+}
+
+.payment-qr img {
+    max-width: 200px;
+    margin: 15px 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    header {
+        padding: 20px 0;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    section {
+        padding: 20px;
+    }
+    
+    .feature-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .feature-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .chat-messages {
+        height: 250px;
+    }
+}

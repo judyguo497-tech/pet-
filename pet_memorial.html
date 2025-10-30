@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主人，我回来啦 - 宠物纪念与对话</title>
+    <link rel="stylesheet" href="pet_memorial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>主人，我回来啦</h1>
+            <p class="subtitle">与您心爱的宠物再次相遇</p>
+        </header>
+
+        <main>
+            <section class="welcome-section">
+                <div class="pet-avatar-container">
+                    <div class="pet-avatar" id="pet-avatar">
+                        <img src="default_dog.png" alt="您的宠物" id="pet-image">
+                        <div class="upload-overlay" id="upload-overlay">
+                            <i class="fas fa-camera"></i>
+                            <span>上传照片</span>
+                        </div>
+                    </div>
+                    <input type="file" id="photo-upload" accept="image/*" style="display: none;">
+                </div>
+                
+                <div class="pet-name-container">
+                    <label for="pet-name">给我起个名字吧：</label>
+                    <input type="text" id="pet-name" placeholder="例如：小白" maxlength="10">
+                    <button id="save-name" class="btn">保存名字</button>
+                </div>
+                
+                <div class="pet-greeting">
+                    <h2 id="greeting-text">主人，我好想你！</h2>
+                </div>
+            </section>
+
+            <section class="interaction-section">
+                <div class="chat-container">
+                    <div class="chat-messages" id="chat-messages">
+                        <div class="message pet-message">
+                            <div class="message-bubble">主人，我回来啦！好想你呀~</div>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="user-message" placeholder="和我说点什么吧...">
+                        <button id="send-message" class="btn">发送</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="premium-features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>与我合影（收费功能）</h3>
+                        <p>上传您的照片，AI技术帮您生成与爱宠的合影，留下美好回忆</p>
+                        <div class="merge-photos">
+                            <div class="photo-upload-container">
+                                <label for="owner-photo">上传您的照片：</label>
+                                <input type="file" id="owner-photo" accept="image/*">
+                            </div>
+                            <button id="generate-photo" class="btn premium-btn">生成合影（￥19.9）</button>
+                        </div>
+                        <div class="result-photo" id="result-photo" style="display: none;">
+                            <img src="" alt="合影结果" id="merged-image">
+                            <button id="download-photo" class="btn">下载合影</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>宠物纪念与对话应用 &copy; 2023</p>
+            <p class="disclaimer">本应用旨在帮助主人缓解对宠物的思念，提供情感慰藉</p>
+        </footer>
+    </div>
+
+    <!-- 支付弹窗 -->
+    <div class="modal" id="payment-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>支付确认</h2>
+            <p>生成与爱宠的合影需支付 ￥19.9</p>
+            <div class="payment-options">
+                <button class="payment-option" data-type="wechat">
+                    <i class="fab fa-weixin"></i> 微信支付
+                </button>
+                <button class="payment-option" data-type="alipay">
+                    <i class="fab fa-alipay"></i> 支付宝
+                </button>
+            </div>
+            <div class="payment-qr" style="display: none;">
+                <img src="qr_code.png" alt="支付二维码" id="payment-qr-code">
+                <p>请使用手机扫码完成支付</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="pet_memorial.js"></script>
+</body>
+</html>

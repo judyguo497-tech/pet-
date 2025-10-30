@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宠爱时光 - 宠物照片修复服务</title>
+    <link rel="stylesheet" href="photo_repair.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="paw-icon.svg" alt="宠爱时光">
+                <h1>宠爱时光</h1>
+            </div>
+            <p class="tagline">让珍贵回忆焕然一新</p>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h2>修复您与爱宠的珍贵回忆</h2>
+                    <p>老照片褪色、破损、模糊？让我们帮您恢复那些珍贵的瞬间</p>
+                    <button class="cta-button">立即修复照片</button>
+                </div>
+                <div class="hero-image">
+                    <img src="before-after.svg" alt="照片修复前后对比">
+                </div>
+            </section>
+
+            <section class="services">
+                <h2>我们的服务</h2>
+                <div class="service-cards">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>基础修复</h3>
+                        <p>修复轻微褪色、划痕和污渍</p>
+                        <div class="price">¥29.9/张</div>
+                    </div>
+                    <div class="service-card featured">
+                        <div class="service-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3>高级修复</h3>
+                        <p>修复严重褪色、破损，增强细节和色彩</p>
+                        <div class="price">¥49.9/张</div>
+                        <div class="popular-tag">最受欢迎</div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3>专业修复</h3>
+                        <p>完全修复严重损坏照片，AI增强细节，艺术级调色</p>
+                        <div class="price">¥89.9/张</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="how-it-works">
+                <h2>修复流程</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">
+                            <i class="fas fa-upload"></i>
+                        </div>
+                        <h3>上传照片</h3>
+                        <p>选择需要修复的宠物照片</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">
+                            <i class="fas fa-sliders"></i>
+                        </div>
+                        <h3>选择服务</h3>
+                        <p>根据照片状况选择合适的修复方案</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h3>支付费用</h3>
+                        <p>安全便捷的在线支付</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h3>获取成果</h3>
+                        <p>24小时内收到精美修复照片</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallery">
+                <h2>修复案例展示</h2>
+                <div class="gallery-container">
+                    <div class="gallery-item">
+                        <div class="before-after">
+                            <div class="before">
+                                <span class="label">修复前</span>
+                                <img src="sample1-before.svg" alt="修复前">
+                            </div>
+                            <div class="after">
+                                <span class="label">修复后</span>
+                                <img src="sample1-after.svg" alt="修复后">
+                            </div>
+                        </div>
+                        <p>老旧泛黄照片修复</p>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="before-after">
+                            <div class="before">
+                                <span class="label">修复前</span>
+                                <img src="sample2-before.svg" alt="修复前">
+                            </div>
+                            <div class="after">
+                                <span class="label">修复后</span>
+                                <img src="sample2-after.svg" alt="修复后">
+                            </div>
+                        </div>
+                        <p>破损照片修复</p>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="before-after">
+                            <div class="before">
+                                <span class="label">修复前</span>
+                                <img src="sample3-before.svg" alt="修复前">
+                            </div>
+                            <div class="after">
+                                <span class="label">修复后</span>
+                                <img src="sample3-after.svg" alt="修复后">
+                            </div>
+                        </div>
+                        <p>模糊照片增强</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="upload-section" id="upload-section">
+                <h2>上传您的照片</h2>
+                <div class="upload-container">
+                    <div class="upload-area" id="upload-area">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>点击或拖拽照片到此处</p>
+                        <span>支持 JPG, PNG, HEIF 格式</span>
+                        <input type="file" id="photo-upload" accept="image/*" style="display: none;">
+                    </div>
+                    <div class="upload-preview" id="upload-preview" style="display: none;">
+                        <img src="" alt="预览" id="preview-image">
+                        <button class="remove-btn" id="remove-photo">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="service-selection" id="service-selection" style="display: none;">
+                    <h3>选择修复服务</h3>
+                    <div class="service-options">
+                        <label class="service-option">
+                            <input type="radio" name="service" value="basic" checked>
+                            <span class="option-content">
+                                <span class="option-name">基础修复</span>
+                                <span class="option-price">¥29.9</span>
+                            </span>
+                            <span class="option-desc">修复轻微褪色、划痕和污渍</span>
+                        </label>
+                        <label class="service-option">
+                            <input type="radio" name="service" value="advanced">
+                            <span class="option-content">
+                                <span class="option-name">高级修复</span>
+                                <span class="option-price">¥49.9</span>
+                            </span>
+                            <span class="option-desc">修复严重褪色、破损，增强细节和色彩</span>
+                        </label>
+                        <label class="service-option">
+                            <input type="radio" name="service" value="professional">
+                            <span class="option-content">
+                                <span class="option-name">专业修复</span>
+                                <span class="option-price">¥89.9</span>
+                            </span>
+                            <span class="option-desc">完全修复严重损坏照片，AI增强细节，艺术级调色</span>
+                        </label>
+                    </div>
+                    <button class="submit-btn" id="submit-repair">提交修复请求</button>
+                </div>
+            </section>
+
+            <section class="testimonials">
+                <h2>客户评价</h2>
+                <div class="testimonial-container">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"我找到了一张20年前和我家狗狗的合影，已经泛黄破损，没想到修复后如此清晰，仿佛时光倒流，非常感谢！"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="avatar1.svg" alt="用户头像">
+                            <div class="author-info">
+                                <h4>李女士</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"我家猫咪去年离开了我们，只有几张模糊的照片。修复后的照片让我能清晰地记住它的样子，这对我来说意义非凡。"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="avatar2.svg" alt="用户头像">
+                            <div class="author-info">
+                                <h4>张先生</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="paw-icon.svg" alt="宠爱时光">
+                    <h3>宠爱时光</h3>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#upload-section">修复服务</a></li>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>联系我们</h4>
+                    <p><i class="fas fa-envelope"></i> service@petphotorepair.com</p>
+                    <p><i class="fas fa-phone"></i> 400-123-4567</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-qq"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 宠爱时光 - 宠物照片修复服务. 保留所有权利.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- 支付弹窗 -->
+    <div class="modal" id="payment-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>支付确认</h2>
+            <div id="payment-details">
+                <p>服务类型: <span id="service-type">基础修复</span></p>
+                <p>价格: <span id="service-price">¥29.9</span></p>
+            </div>
+            <div class="payment-options">
+                <button class="payment-option" data-type="wechat">
+                    <i class="fab fa-weixin"></i> 微信支付
+                </button>
+                <button class="payment-option" data-type="alipay">
+                    <i class="fab fa-alipay"></i> 支付宝
+                </button>
+            </div>
+            <div class="payment-qr" style="display: none;">
+                <img src="qr_code.svg" alt="支付二维码" id="payment-qr-code">
+                <p>请使用手机扫码完成支付</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 成功提示弹窗 -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>提交成功！</h2>
+            <p>我们已收到您的修复请求，将在24小时内完成修复并通过邮件发送给您。</p>
+            <button class="cta-button" id="close-success">确定</button>
+        </div>
+    </div>
+
+    <script src="photo_repair.js"></script>
+</body>
+</html>
